@@ -1,0 +1,39 @@
+# Virtual environments (never commit) - active 3.12 and 3.10 backup
+.venv/
+.venv-py310-backup/
+venv/
+env/
+
+# Secrets / local config (never commit)
+.env
+.env.*
+!.env.example
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+app/__pycache__/
+
+# Temporary probe / test artifacts (never commit)
+audit*_probe.py
+task*_probe*.py
+task*_run.py
+task*_seed.py
+task*_dbg*.py
+review*_run*.py
+review*_seed.py
+review*_dbg*.py
+explain_probe.py
+final*_probe.py
+check3.py
+
+# Docker (not part of submission)
+Dockerfile
+.dockerignore
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
